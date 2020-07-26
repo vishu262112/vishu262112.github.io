@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArtCart Adjure</title>
+    <link rel="shortcut icon" href="img/new_logo.png" type="image/x-icon">
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  $('input[type="file"]').on("change", function() {
+    let filenames = [];
+    let files = document.getElementById("customFile").files;
+    if (files.length > 1) {
+      filenames.push("Total Files (" + files.length + ")");
+    } else {
+      for (let i in files) {
+        if (files.hasOwnProperty(i)) {
+          filenames.push(files[i].name);
+        }
+      }
+    }
+    $(this)
+      .next(".custom-file-label")
+      .html(filenames.join(","));
+  });
+});
+</script>
+</head>
+
+<body>
+    <div class="humberger__menu__wrapper">
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./art.html">Art</a></li>
+                <li><a href="./material.html">Material</a></li>
+                <li><a href="./adjure.html">Adjure</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/new_logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li><a href="./art.html">Art</a></li>
+                            <li><a href="./material.html">Material</a></li>                    
+                            <li class="active"><a href="./adjure.html">Adjure</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    
+   
+    <section class="breadcrumb-section set-bg" data-setbg="img/rainbow.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Your Order</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Home</a>
+                            <a href="./index.html">Adjure</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+   
+    
+   
+    <div class="container mt-5">
+        <h3 class="text-center"> Upload your photo</h3>
+        <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4">
+        <form action="thanks.html#success">
+          <div class="form-group">
+            <label><strong>Upload Files</strong></label>
+            <div class="custom-file">
+              <input type="file" name="files[]" multiple class="custom-file-input form-control" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button action="thanks.html#success" type="button" name="upload" value="upload" id="upload" class="btn btn-block btn-dark"><i class="fa fa-fw fa-upload"></i> Upload</button>
+          </div>
+        </form>
+      </div>
+      
+<br><br><br>
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/new_logo.png" alt="Sorry"></a>
+                        </div>
+                        <ul>
+                            <li>Address: Puttur, karnataka India</li>
+                            <li>Phone: +91 6360738830</li>
+                            <li>Email: vishupoojary98@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./art.html">Art</a></li>
+                            <li><a href="./material.html">Material</a></li>
+                            <li><a href="./adjure.html">Adjure</a></li>
+                            <li class="active"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 align-self-center">
+                    <div class="footer__widget">
+                         <div class="footer__widget__social">
+                            <a href="https://www.facebook.com/vishwas.poojary.50"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/_vishu_ms_/"><i class="fa fa-instagram"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <!-- <div class="footer__copyright"> -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright @2020 All rights reserved 
+                            </p>
+                        </div>
+                </div>   
+                <div class="col-sm-6 d-flex justify-content-center">    
+                        <div class="footer__copyright__payment"><img src="img/payment.png" alt=""></div>
+                        </div>
+                    </div>        
+                <!-- </div> -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
